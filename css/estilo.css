@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: blue;
+    text-decoration: underline;
+}
+body{
+    background-color: rgb(0, 128, 109);
+}
+h2{
+    color: rgba(255, 255, 0, 0.667);
+    text-decoration: underline;
+}
+img{
+    width: 200px;
+}
+main{
+    padding: 20px;
+}
+.paint{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-columns: 1fr;
+    gap: 8px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "paint1 paint2 paint3"
+    "paint4 paint5 paint6"
+    "paint7 paint8 paint9"
+    "paint10 paint11 paint12"
+    "paint13 paint14 paint15"
+    "paint16 paint17 .";
+}
+.paint1{
+    grid-area: paint1;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint2{
+    grid-area: paint2;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint3{
+    grid-area: paint3;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint4{
+    grid-area: paint4;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint5{
+    grid-area: paint5;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint6{
+    grid-area: paint6;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint7{
+    grid-area: paint7;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint8{
+    grid-area: paint8;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint9{
+    grid-area: paint9;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint10{
+    grid-area: paint10;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint11{
+    grid-area: paint11;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint12{
+    grid-area: paint12;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint13{
+    grid-area: paint13;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint14{
+    grid-area: paint14;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint15{
+    grid-area: paint15;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint16{
+    grid-area: paint16;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+.paint17{
+    grid-area: paint17;
+    text-align: center;
+    border-top: solid 5px green;
+    border-right: solid 5px green;
+    border-bottom: solid 5px green;
+    border-left: solid 5px green;
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(brown, yellow, violet);
+    width: 100%;
+    h3{
+        color: red;
+    }
+}
+@media screen and (max-width: 768px) {
+    main{
+        height: 100%;
+        .paint{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(9, 1fr);
+            grid-auto-columns: 1fr;
+            gap: 8px;
+            grid-auto-flow: row;
+            grid-template-areas: 
+            "paint1 paint2" 
+            "paint3 paint4"
+            "paint5 paint6"
+            "paint7 paint8" 
+            "paint9 paint10" 
+            "paint11 paint12"
+            "paint13 paint14" 
+            "paint15 paint16" 
+            "paint17 .";  
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    footer{
+        width: 100%;
+    }
+}
