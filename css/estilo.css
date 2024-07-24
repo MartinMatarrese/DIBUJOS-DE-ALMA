@@ -1,213 +1,663 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1{
-    color: blue;
-    text-decoration: underline;
+
+body {
+  background-color: rgb(0, 128, 109);
 }
-body{
-    background-color: rgb(0, 128, 109);
-   p{
-    font-size: 30px;
-   }
+
+header {
+  width: 100%;
 }
-h2{
-    color: rgba(255, 255, 0, 0.667);
-    text-decoration: underline;
+header h1 {
+  color: blue;
+  text-decoration: underline;
 }
-img{
-    width: 400px;
+header h2 {
+  color: rgba(255, 255, 0, 0.667);
+  text-decoration: underline;
+  text-align: center;
 }
-main{
-    padding: 20px;
+header .menu {
+  background: linear-gradient(brown, yellow, violet);
 }
-.paint{
+header .menu li {
+  padding: 10px;
+}
+header .menu li a {
+  color: red;
+}
+header .menu li:hover {
+  color: yellow;
+  background-color: red;
+  border-radius: 50%;
+  transform: scale(1.1, 1.1);
+}
+
+main {
+  padding: 20px;
+}
+main h2 {
+  color: rgba(255, 255, 0, 0.667);
+  text-decoration: underline;
+  text-align: center;
+}
+main .paints {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-auto-columns: 1fr;
+  gap: 8px;
+  grid-auto-flow: row;
+  grid-template-areas: "paint1 paint2 paint3" "paint4 paint5 paint6" "paint7 paint8 paint9" "paint10 paint11 paint12" "paint13 paint14 paint15" "paint16 paint17 paint18" "paint19 paint20 paint21" "paint22 paint23 .";
+}
+main .paint1 {
+  grid-area: paint1;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint2 {
+  grid-area: paint2;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint3 {
+  grid-area: paint3;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint4 {
+  grid-area: paint4;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint5 {
+  grid-area: paint5;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint6 {
+  grid-area: paint6;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint7 {
+  grid-area: paint7;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint8 {
+  grid-area: paint8;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint9 {
+  grid-area: paint9;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint10 {
+  grid-area: paint10;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint11 {
+  grid-area: paint11;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint12 {
+  grid-area: paint12;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint13 {
+  grid-area: paint13;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint14 {
+  grid-area: paint14;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint15 {
+  grid-area: paint15;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint16 {
+  grid-area: paint16;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint17 {
+  grid-area: paint17;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint18 {
+  grid-area: paint18;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint19 {
+  grid-area: paint19;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint20 {
+  grid-area: paint20;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint21 {
+  grid-area: paint21;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint22 {
+  grid-area: paint22;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint23 {
+  grid-area: paint23;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .paint {
+  width: 200px;
+  border: 8px double grey;
+  margin: 8px;
+}
+main .carpetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(14, 1fr);
+  grid-auto-columns: 1fr;
+  gap: 8px;
+  grid-auto-flow: row;
+  grid-template-areas: "carpeta1 carpeta2 carpeta3" "carpeta4 carpeta5 carpeta6" "carpeta7 carpeta8 carpeta9" "carpeta10 carpeta11 carpeta12" "carpeta13 carpeta14 carpeta15" "carpeta16 carpeta17 carpeta18" "carpeta19 carpeta20 carpeta21" "carpeta22 carpeta23 carpeta24" "carpeta25 carpeta26 carpeta27" "carpeta28 carpeta29 carpeta30" "carpeta31 carpeta32 carpeta33" "carpeta34 carpeta35 carpeta36" "carpeta37 carpeta38 carpeta39" "carpeta40 carpeta41 carpeta42";
+}
+main .carpeta1 {
+  grid-area: carpeta1;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta2 {
+  grid-area: carpeta2;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta3 {
+  grid-area: carpeta3;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta4 {
+  grid-area: carpeta4;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta5 {
+  grid-area: carpeta5;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta6 {
+  grid-area: carpeta6;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta7 {
+  grid-area: carpeta7;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta8 {
+  grid-area: carpeta8;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta9 {
+  grid-area: carpeta9;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta10 {
+  grid-area: carpeta10;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta11 {
+  grid-area: carpeta11;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta12 {
+  grid-area: carpeta12;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta13 {
+  grid-area: carpeta13;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta14 {
+  grid-area: carpeta14;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta15 {
+  grid-area: carpeta15;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta16 {
+  grid-area: carpeta16;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta17 {
+  grid-area: carpeta17;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta18 {
+  grid-area: carpeta18;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta19 {
+  grid-area: carpeta19;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta20 {
+  grid-area: carpeta20;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta21 {
+  grid-area: carpeta21;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta22 {
+  grid-area: carpeta22;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta23 {
+  grid-area: carpeta23;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta24 {
+  grid-area: carpeta24;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta25 {
+  grid-area: carpeta25;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta26 {
+  grid-area: carpeta26;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta27 {
+  grid-area: carpeta27;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta28 {
+  grid-area: carpeta28;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta29 {
+  grid-area: carpeta29;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta30 {
+  grid-area: carpeta30;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta31 {
+  grid-area: carpeta31;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta32 {
+  grid-area: carpeta32;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta33 {
+  grid-area: carpeta33;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta34 {
+  grid-area: carpeta34;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta35 {
+  grid-area: carpeta35;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta36 {
+  grid-area: carpeta36;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta37 {
+  grid-area: carpeta37;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta38 {
+  grid-area: carpeta38;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta39 {
+  grid-area: carpeta39;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta40 {
+  grid-area: carpeta40;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta41 {
+  grid-area: carpeta41;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta42 {
+  grid-area: carpeta42;
+  text-align: center;
+  border-top: solid 5px green;
+  border-right: solid 5px green;
+  border-bottom: solid 5px green;
+  border-left: solid 5px green;
+}
+main .carpeta {
+  width: 200px;
+  border: 8px double grey;
+  margin: 8px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(brown, yellow, violet);
+  width: 100%;
+}
+footer p {
+  font-size: 30px;
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  main .paints {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(12, 1fr);
     grid-auto-columns: 1fr;
     gap: 8px;
     grid-auto-flow: row;
-    grid-template-areas: 
-    "paint1 paint2 paint3"
-    "paint4 paint5 paint6"
-    "paint7 paint8 paint9"
-    "paint10 paint11 paint12"
-    "paint13 paint14 paint15"
-    "paint16 paint17 .";
+    grid-template-areas: "paint1 paint2" "paint3 paint4" "paint5 paint6" "paint7 paint8" "paint9 paint10" "paint11 paint12" "paint13 paint14" "paint15 paint16" "paint17 paint18" "paint19 paint20" "paint21 paint22" "paint23 .";
+  }
+  main .carpetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(14, 1fr);
+    grid-auto-columns: 1fr;
+    gap: 8px;
+    grid-auto-flow: row;
+    grid-template-areas: "carpeta1 carpeta2" "carpeta3 carpeta4" "carpeta5 carpeta6" "carpeta7 carpeta8" "carpeta9 carpeta10" "carpeta11 carpeta12" "carpeta13 carpeta14" "carpeta15 carpeta16" "carpeta17 carpeta18" "carpeta19 carpeta20" "carpeta21 carpeta22" "carpeta23 carpeta24" "carpeta25 carpeta26" "carpeta27 carpeta28" "carpeta29 carpeta30" "carpeta31 carpeta32" "carpeta33 carpeta34" "carpeta35 carpeta36" "carpeta37 carpeta38" "carpeta39 carpeta40" "carpeta41 carpeta42";
+  }
 }
-.paint1{
-    grid-area: paint1;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint2{
-    grid-area: paint2;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint3{
-    grid-area: paint3;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint4{
-    grid-area: paint4;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint5{
-    grid-area: paint5;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint6{
-    grid-area: paint6;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint7{
-    grid-area: paint7;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint8{
-    grid-area: paint8;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint9{
-    grid-area: paint9;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint10{
-    grid-area: paint10;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint11{
-    grid-area: paint11;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint12{
-    grid-area: paint12;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint13{
-    grid-area: paint13;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint14{
-    grid-area: paint14;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint15{
-    grid-area: paint15;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint16{
-    grid-area: paint16;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-.paint17{
-    grid-area: paint17;
-    text-align: center;
-    border-top: solid 5px green;
-    border-right: solid 5px green;
-    border-bottom: solid 5px green;
-    border-left: solid 5px green;
-}
-footer{
-    padding: 20px;
-    text-align: center;
-    background: linear-gradient(brown, yellow, violet);
+@media screen and (max-width: 480) {
+  header {
     width: 100%;
-    h3{
-        color: red;
-    }
-}
-@media screen and (max-width: 768px) {
-    main{
-        height: 100%;
-        .paint{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(9, 1fr);
-            grid-auto-columns: 1fr;
-            gap: 8px;
-            grid-auto-flow: row;
-            grid-template-areas: 
-            "paint1 paint2" 
-            "paint3 paint4"
-            "paint5 paint6"
-            "paint7 paint8" 
-            "paint9 paint10" 
-            "paint11 paint12"
-            "paint13 paint14" 
-            "paint15 paint16" 
-            "paint17 .";  
-        }
-    }
+  }
+  main {
+    width: 100%;
+    padding: 10px;
+  }
+  footer {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 320px) {
-    footer{
-        width: 100%;
-    }
+  main .paints {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(23, 1fr);
+    grid-auto-columns: 1fr;
+    gap: 8px;
+    grid-auto-flow: row;
+    grid-template-areas: "paint1" "paint2" "paint3" "paint4" "paint5" "paint6" "paint7" "paint8" "paint9" "paint10" "paint11" "paint12" "paint13" "paint14" "paint15" "paint16" "paint17" "paint18" "paint19" "paint20" "paint21" "paint22" "paint23";
+  }
+  main .carpetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(42, 1fr);
+    grid-auto-columns: 1fr;
+    gap: 8px;
+    grid-auto-flow: row;
+    grid-template-areas: "carpeta1" "carpeta2" "carpeta3" "carpeta4" "carpeta5" "carpeta6" "carpeta7" "carpeta8" "carpeta9" "carpeta10" "carpeta11" "carpeta12" "carpeta13" "carpeta14" "carpeta15" "carpeta16" "carpeta17" "carpeta18" "carpeta19" "carpeta20" "carpeta21" "carpeta22" "carpeta23" "carpeta24" "carpeta25" "carpeta26" "carpeta27" "carpeta28" "carpeta29" "carpeta30" "carpeta31" "carpeta32" "carpeta33" "carpeta34" "carpeta35" "carpeta36" "carpeta37" "carpeta38" "carpeta39" "carpeta40" "carpeta41" "carpeta42";
+  }
+  footer {
+    width: 100%;
+  }
 }
+
+/*# sourceMappingURL=estilo.css.map */

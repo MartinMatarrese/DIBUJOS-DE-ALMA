@@ -1,0 +1,27 @@
+header {
+    width: 100%;
+    h1 {
+        color: blue;
+        text-decoration: underline;
+    }
+    h2 { 
+        color: rgba(255, 255, 0, 0.667);
+        text-decoration: underline;
+        text-align: center;
+    }
+    .menu {
+        background: linear-gradient(brown, yellow, violet);
+        li {
+            padding: 10px;
+            a {
+                color: red;
+            }
+            &:hover {
+                color: yellow;
+                background-color: red;
+                border-radius: 50%;
+                transform: scale(1.1, 1.1);
+            }
+        }
+    }
+}
