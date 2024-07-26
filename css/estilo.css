@@ -8,9 +8,6 @@ body {
   background-color: rgb(0, 128, 109);
 }
 
-header {
-  width: 100%;
-}
 header h1 {
   color: blue;
   text-decoration: underline;
@@ -22,6 +19,7 @@ header h2 {
 }
 header .menu {
   background: linear-gradient(brown, yellow, violet);
+  width: 100%;
 }
 header .menu li {
   padding: 10px;
@@ -603,8 +601,20 @@ footer p {
   font-size: 30px;
   color: red;
 }
+footer a {
+  color: red;
+  text-decoration: none;
+}
 
+@media screen and (max-width: 768px) {
+  header .menu {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 600px) {
+  header .menu {
+    width: 100%;
+  }
   main .paints {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -625,7 +635,7 @@ footer p {
   }
 }
 @media screen and (max-width: 480) {
-  header {
+  header .menu {
     width: 100%;
   }
   main {
@@ -637,6 +647,9 @@ footer p {
   }
 }
 @media screen and (max-width: 320px) {
+  header .menu {
+    width: 100%;
+  }
   main .paints {
     display: grid;
     grid-template-columns: 1fr;

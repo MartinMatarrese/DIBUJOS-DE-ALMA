@@ -1,5 +1,4 @@
 header {
-    width: 100%;
     h1 {
         color: blue;
         text-decoration: underline;
@@ -11,6 +10,7 @@ header {
     }
     .menu {
         background: linear-gradient(brown, yellow, violet);
+        width: 100%;
         li {
             padding: 10px;
             a {
