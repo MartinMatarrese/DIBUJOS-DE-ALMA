@@ -1,17 +1,12 @@
 @media screen and (max-width: 768px) {
     header{
-        .menu{
-            width: 100%;
-        }
-    }
-}
-@media screen and (max-width: 600px) {
-    header{
-        .menu{
-            width: 100%;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
     main {
+        height: 100%;
         .paints {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -35,8 +30,67 @@
         }
         .carpetas {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: repeat(14, 1fr);
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(21, 1fr);
+            grid-auto-columns: 1fr;
+            gap: 8px;
+            grid-auto-flow: row;
+            grid-template-areas: 
+            "carpeta1 carpeta2" 
+            "carpeta3 carpeta4" 
+            "carpeta5 carpeta6"
+            "carpeta7 carpeta8" 
+            "carpeta9 carpeta10" 
+            "carpeta11 carpeta12"
+            "carpeta13 carpeta14" 
+            "carpeta15 carpeta16"
+            "carpeta17 carpeta18"
+            "carpeta19 carpeta20" 
+            "carpeta21 carpeta22" 
+            "carpeta23 carpeta24"
+            "carpeta25 carpeta26" 
+            "carpeta27 carpeta28" 
+            "carpeta29 carpeta30"
+            "carpeta31 carpeta32" 
+            "carpeta33 carpeta34" 
+            "carpeta35 carpeta36"
+            "carpeta37 carpeta38" 
+            "carpeta39 carpeta40"
+            "carpeta41 carpeta42";
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    body{
+        width: 100vw;
+    }
+    main {
+        width: 80vw;
+        .paints {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(12, 1fr);
+            grid-auto-columns: 1fr;
+            gap: 8px;
+            grid-auto-flow: row;
+            grid-template-areas: 
+              "paint1 paint2" 
+              "paint3 paint4"
+              "paint5 paint6"
+              "paint7 paint8" 
+              "paint9 paint10" 
+              "paint11 paint12"
+              "paint13 paint14" 
+              "paint15 paint16" 
+              "paint17 paint18"
+              "paint19 paint20"
+              "paint21 paint22"
+              "paint23 .";  
+        }
+        .carpetas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(21, 1fr);
             grid-auto-columns: 1fr;
             gap: 8px;
             grid-auto-flow: row;
@@ -66,14 +120,91 @@
     }
 }
 @media screen and (max-width: 480){
-    header {
-        .menu{
-            width: 100%;
-        }
-    }
     main {
-        width: 100%;
-        padding: 10px;
+        width: 80vw;
+        .paints {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(23, 1fr);
+            grid-auto-columns: 1fr;
+            gap: 8px;
+            grid-auto-flow: row;
+            grid-template-areas: 
+              "paint1" 
+              "paint2" 
+              "paint3" 
+              "paint4"
+              "paint5" 
+              "paint6"
+              "paint7" 
+              "paint8" 
+              "paint9" 
+              "paint10" 
+              "paint11" 
+              "paint12"
+              "paint13" 
+              "paint14" 
+              "paint15" 
+              "paint16" 
+              "paint17" 
+              "paint18"
+              "paint19" 
+              "paint20"
+              "paint21" 
+              "paint22"
+              "paint23";  
+        }
+        .carpetas {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(42, 1fr);
+            grid-auto-columns: 1fr;
+            gap: 8px;
+            grid-auto-flow: row;
+            grid-template-areas: 
+            "carpeta1" 
+            "carpeta2" 
+            "carpeta3"
+            "carpeta4" 
+            "carpeta5" 
+            "carpeta6"
+            "carpeta7" 
+            "carpeta8" 
+            "carpeta9"
+            "carpeta10" 
+            "carpeta11" 
+            "carpeta12"
+            "carpeta13" 
+            "carpeta14" 
+            "carpeta15"
+            "carpeta16" 
+            "carpeta17" 
+            "carpeta18"
+            "carpeta19"
+            "carpeta20" 
+            "carpeta21"
+            "carpeta22" 
+            "carpeta23" 
+            "carpeta24"
+            "carpeta25" 
+            "carpeta26" 
+            "carpeta27"
+            "carpeta28" 
+            "carpeta29" 
+            "carpeta30"
+            "carpeta31" 
+            "carpeta32" 
+            "carpeta33"
+            "carpeta34" 
+            "carpeta35" 
+            "carpeta36"
+            "carpeta37" 
+            "carpeta38" 
+            "carpeta39"
+            "carpeta40" 
+            "carpeta41" 
+            "carpeta42";
+        }
     }
     footer {
         width: 100%;
