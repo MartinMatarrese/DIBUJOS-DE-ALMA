@@ -119,7 +119,7 @@
         }
     }
 }
-@media screen and (max-width: 480){
+@media screen and (max-width: 480px){
     main {
         width: 80vw;
         .paints {
@@ -207,7 +207,7 @@
         }
     }
     footer {
-        width: 100%;
+        width: 100vw;
     }
 }
 @media screen and (max-width: 320px) {
@@ -302,6 +302,6 @@
         }
     }
     footer {
-        width: 100%;
+        width: 100vw;
     }
 };

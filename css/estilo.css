@@ -661,7 +661,7 @@ footer a {
     grid-template-areas: "carpeta1 carpeta2" "carpeta3 carpeta4" "carpeta5 carpeta6" "carpeta7 carpeta8" "carpeta9 carpeta10" "carpeta11 carpeta12" "carpeta13 carpeta14" "carpeta15 carpeta16" "carpeta17 carpeta18" "carpeta19 carpeta20" "carpeta21 carpeta22" "carpeta23 carpeta24" "carpeta25 carpeta26" "carpeta27 carpeta28" "carpeta29 carpeta30" "carpeta31 carpeta32" "carpeta33 carpeta34" "carpeta35 carpeta36" "carpeta37 carpeta38" "carpeta39 carpeta40" "carpeta41 carpeta42";
   }
 }
-@media screen and (max-width: 480) {
+@media screen and (max-width: 480px) {
   main {
     width: 80vw;
   }
@@ -684,7 +684,7 @@ footer a {
     grid-template-areas: "carpeta1" "carpeta2" "carpeta3" "carpeta4" "carpeta5" "carpeta6" "carpeta7" "carpeta8" "carpeta9" "carpeta10" "carpeta11" "carpeta12" "carpeta13" "carpeta14" "carpeta15" "carpeta16" "carpeta17" "carpeta18" "carpeta19" "carpeta20" "carpeta21" "carpeta22" "carpeta23" "carpeta24" "carpeta25" "carpeta26" "carpeta27" "carpeta28" "carpeta29" "carpeta30" "carpeta31" "carpeta32" "carpeta33" "carpeta34" "carpeta35" "carpeta36" "carpeta37" "carpeta38" "carpeta39" "carpeta40" "carpeta41" "carpeta42";
   }
   footer {
-    width: 100%;
+    width: 100vw;
   }
 }
 @media screen and (max-width: 320px) {
@@ -710,7 +710,7 @@ footer a {
     grid-template-areas: "carpeta1" "carpeta2" "carpeta3" "carpeta4" "carpeta5" "carpeta6" "carpeta7" "carpeta8" "carpeta9" "carpeta10" "carpeta11" "carpeta12" "carpeta13" "carpeta14" "carpeta15" "carpeta16" "carpeta17" "carpeta18" "carpeta19" "carpeta20" "carpeta21" "carpeta22" "carpeta23" "carpeta24" "carpeta25" "carpeta26" "carpeta27" "carpeta28" "carpeta29" "carpeta30" "carpeta31" "carpeta32" "carpeta33" "carpeta34" "carpeta35" "carpeta36" "carpeta37" "carpeta38" "carpeta39" "carpeta40" "carpeta41" "carpeta42";
   }
   footer {
-    width: 100%;
+    width: 100vw;
   }
 }
 
